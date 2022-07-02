@@ -1,0 +1,35 @@
+@import url('./buttons.css');
+body{
+    background-color: #26B4BC;
+    display: flex;
+    align-items: center;
+    block-size: 100vh;
+}
+.wrapper{
+    margin: auto;
+    max-inline-size:56.25rem;
+}
+.player{
+    position: relative;
+    outline: 1px solid red;
+}
+.player video{
+    inline-size: 100%;
+    /* ojito con esto */
+    aspect-ratio: 16/9;
+}
+.player-title{
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+.player-actions{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 1;
+}
